@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Title
+# key: <title
+# --
+
+
+#+TITLE:${1:title}
+#+DATE:`(format-time-string "%Y-%m-%d")`
+#+AUTHOR:Luke McPhee
+
+$0
