@@ -204,7 +204,12 @@ lsp-idle-delay 0.500
 (use-package utop
   :ensure t
   :config
-  (add-hook 'tuareg-mode-hook #'utop-minor-mode))
+  (add-hook 'tuareg-mode-hook #'utop-minor-mode)
+  (add-hook 'reason-mode-hook #'utop-minor-mode) 
+)
+(setq utop-command "opam config exec -- rtop -emacs")
+(use-package reason-mode 
+   :ensure t)
 ;; ocaml end
 
 ;; typescript - https://willschenk.com/articles/2021/setting_up_emacs_for_typescript_development/
